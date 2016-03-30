@@ -1,0 +1,16 @@
+.\outputs\project_pwmlab.o: Source\Project_PWMlab.c
+.\outputs\project_pwmlab.o: .\Headers\Project_PWMlab.h
+.\outputs\project_pwmlab.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\outputs\project_pwmlab.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\outputs\project_pwmlab.o: C:\ti\TivaWare_C_Series-2.1.0.12573\inc/hw_types.h
+.\outputs\project_pwmlab.o: C:\ti\TivaWare_C_Series-2.1.0.12573\inc/hw_memmap.h
+.\outputs\project_pwmlab.o: C:\ti\TivaWare_C_Series-2.1.0.12573\inc/hw_gpio.h
+.\outputs\project_pwmlab.o: C:\ti\TivaWare_C_Series-2.1.0.12573\inc/hw_sysctl.h
+.\outputs\project_pwmlab.o: C:\ti\TivaWare_C_Series-2.1.0.12573\inc/hw_timer.h
+.\outputs\project_pwmlab.o: C:\ti\TivaWare_C_Series-2.1.0.12573\inc/hw_pwm.h
+.\outputs\project_pwmlab.o: C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib/sysctl.h
+.\outputs\project_pwmlab.o: C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib/pin_map.h
+.\outputs\project_pwmlab.o: C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib/gpio.h
+.\outputs\project_pwmlab.o: C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib/timer.h
+.\outputs\project_pwmlab.o: C:\ti\TivaWare_C_Series-2.1.0.12573\driverlib/interrupt.h
+.\outputs\project_pwmlab.o: .\Headers\BITDEFS.H

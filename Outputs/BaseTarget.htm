@@ -1,0 +1,1745 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Outputs\BaseTarget.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Outputs\BaseTarget.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Tue Mar 01 22:10:47 2016
+<BR><P>
+<H3>Maximum Stack Usage =        256 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+InitMasterSM &rArr; StartMasterSM &rArr; RunMasterSM &rArr; StartBotSM &rArr; RunBotSM &rArr;  RunBotSM (Cycle)
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[27]">Reset_Handler</a>
+ <LI><a href="#[58]">__user_initial_stackheap</a>
+ <LI><a href="#[3]">NmiSR</a>
+ <LI><a href="#[4]">FaultISR</a>
+ <LI><a href="#[5]">IntDefaultHandler</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[bb]">RunPACCommSM</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[bb]">RunPACCommSM</a><BR>
+ <LI><a href="#[ba]">RunGameTimerSM</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[ba]">RunGameTimerSM</a><BR>
+ <LI><a href="#[b3]">RunFindingCityNavSM</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[b3]">RunFindingCityNavSM</a><BR>
+ <LI><a href="#[ac]">RunAtCityShootSM</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[ac]">RunAtCityShootSM</a><BR>
+ <LI><a href="#[a8]">RunAtCityCommSM</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[a8]">RunAtCityCommSM</a><BR>
+ <LI><a href="#[b1]">RunBotSM</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[b1]">RunBotSM</a><BR>
+ <LI><a href="#[cc]">UARTCharPut</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[cc]">UARTCharPut</a><BR>
+ <LI><a href="#[3]">NmiSR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">NmiSR</a><BR>
+ <LI><a href="#[4]">FaultISR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">FaultISR</a><BR>
+ <LI><a href="#[5]">IntDefaultHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">IntDefaultHandler</a><BR>
+ <LI><a href="#[45]">SysCtlDelay</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[45]">SysCtlDelay</a><BR>
+ <LI><a href="#[44]">_sys_exit</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[44]">_sys_exit</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[15]">Check4Keystroke</a> from eventcheckers.o(i.Check4Keystroke) referenced from es_checkevents.o(.constdata)
+ <LI><a href="#[c]">CityIntHandler</a> from citysensorhw.o(i.CityIntHandler) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[d]">CityTOIntHandler</a> from citysensorhw.o(i.CityTOIntHandler) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[10]">ControllerInterruptResponse</a> from project_motorservice.o(i.ControllerInterruptResponse) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[24]">ES_PostList01</a> from es_postlist.o(i.ES_PostList01) referenced 5 times from es_timers.o(.constdata)
+ <LI><a href="#[25]">ES_PostList02</a> from es_postlist.o(i.ES_PostList02) referenced from es_timers.o(.constdata)
+ <LI><a href="#[4]">FaultISR</a> from startup_rvmdk.o(RESET) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[e]">IRIntHandler</a> from irsensorhw.o(i.IRIntHandler) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[f]">IRTOIntHandler</a> from irsensorhw.o(i.IRTOIntHandler) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[18]">InitEventPrinter</a> from eventprinter.o(i.InitEventPrinter) referenced from es_framework.o(.constdata)
+ <LI><a href="#[16]">InitMapKeys</a> from mapkeys.o(i.InitMapKeys) referenced from es_framework.o(.constdata)
+ <LI><a href="#[1c]">InitMasterSM</a> from mastersm.o(i.InitMasterSM) referenced from es_framework.o(.constdata)
+ <LI><a href="#[1e]">InitMotorService</a> from project_motorservice.o(i.InitMotorService) referenced from es_framework.o(.constdata)
+ <LI><a href="#[1a]">InitPeriodicEventCheckerService</a> from periodiceventcheckerservice.o(i.InitPeriodicEventCheckerService) referenced from es_framework.o(.constdata)
+ <LI><a href="#[8]">InputCaptureResponse0</a> from project_motorservice.o(i.InputCaptureResponse0) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[a]">InputCaptureResponse1</a> from project_motorservice.o(i.InputCaptureResponse1) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[5]">IntDefaultHandler</a> from startup_rvmdk.o(RESET) referenced 102 times from startup_rvmdk.o(RESET)
+ <LI><a href="#[3]">NmiSR</a> from startup_rvmdk.o(RESET) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[11]">OnLineMotorSpeedsInterrupt</a> from project_motorservice.o(i.OnLineMotorSpeedsInterrupt) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[22]">PostEventPrinter</a> from eventprinter.o(i.PostEventPrinter) referenced 2 times from es_postlist.o(.constdata)
+ <LI><a href="#[21]">PostMapKeys</a> from mapkeys.o(i.PostMapKeys) referenced from es_postlist.o(.constdata)
+ <LI><a href="#[20]">PostMasterSM</a> from mastersm.o(i.PostMasterSM) referenced 3 times from es_postlist.o(.constdata)
+ <LI><a href="#[26]">PostMotorService</a> from project_motorservice.o(i.PostMotorService) referenced from es_timers.o(.constdata)
+ <LI><a href="#[23]">PostPeriodicEventCheckerService</a> from periodiceventcheckerservice.o(i.PostPeriodicEventCheckerService) referenced from es_postlist.o(.constdata)
+ <LI><a href="#[27]">Reset_Handler</a> from startup_rvmdk.o(RESET) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[19]">RunEventPrinter</a> from eventprinter.o(i.RunEventPrinter) referenced from es_framework.o(.constdata)
+ <LI><a href="#[17]">RunMapKeys</a> from mapkeys.o(i.RunMapKeys) referenced from es_framework.o(.constdata)
+ <LI><a href="#[1d]">RunMasterSM</a> from mastersm.o(i.RunMasterSM) referenced from es_framework.o(.constdata)
+ <LI><a href="#[1f]">RunMotorService</a> from project_motorservice.o(i.RunMotorService) referenced from es_framework.o(.constdata)
+ <LI><a href="#[1b]">RunPeriodicEventCheckerService</a> from periodiceventcheckerservice.o(i.RunPeriodicEventCheckerService) referenced from es_framework.o(.constdata)
+ <LI><a href="#[7]">SSIHWEOTIntHandler</a> from ssihw.o(i.SSIHWEOTIntHandler) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[6]">SysTickIntHandler</a> from es_port.o(i.SysTickIntHandler) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[9]">TimeoutResponse0</a> from project_motorservice.o(i.TimeoutResponse0) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[b]">TimeoutResponse1</a> from project_motorservice.o(i.TimeoutResponse1) referenced from startup_rvmdk.o(RESET)
+ <LI><a href="#[12]">_get_lc_ctype</a> from lc_ctype_c.o(locale$$code) referenced from rt_ctype_table.o(.text)
+ <LI><a href="#[14]">_printf_input_char</a> from _printf_char_common.o(.text) referenced from _printf_char_common.o(.text)
+ <LI><a href="#[13]">fputc</a> from retarget.o(i.fputc) referenced from _printf_char_file.o(.text)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[27]"></a>Reset_Handler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[28]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[29]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[2b]"></a>__scatterload_rt2</STRONG> (Thumb, 44 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[dd]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[de]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[2c]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[df]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+
+<P><STRONG><a name="[2d]"></a>_printf_d</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_d.o(.ARM.Collect$$_printf_percent$$00000009))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
+<LI>Call Chain = _printf_d &rArr; _printf_int_dec &rArr; _printf_int_common &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_dec
+</UL>
+
+<P><STRONG><a name="[50]"></a>_printf_percent</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
+</UL>
+
+<P><STRONG><a name="[2f]"></a>_printf_x</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_x.o(.ARM.Collect$$_printf_percent$$0000000C))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64 + Unknown Stack Size
+<LI>Call Chain = _printf_x &rArr; _printf_int_hex &rArr; _printf_int_common &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_hex
+</UL>
+
+<P><STRONG><a name="[31]"></a>_printf_c</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_c.o(.ARM.Collect$$_printf_percent$$00000013))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + Unknown Stack Size
+<LI>Call Chain = _printf_c &rArr; _printf_char &rArr; _printf_cs_common &rArr; _printf_str &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char
+</UL>
+
+<P><STRONG><a name="[33]"></a>_printf_s</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_s.o(.ARM.Collect$$_printf_percent$$00000014))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + Unknown Stack Size
+<LI>Call Chain = _printf_s &rArr; _printf_string &rArr; _printf_cs_common &rArr; _printf_str &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_string
+</UL>
+
+<P><STRONG><a name="[e0]"></a>_printf_percent_end</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_percent_end.o(.ARM.Collect$$_printf_percent$$00000017))
+
+<P><STRONG><a name="[3d]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
+</UL>
+
+<P><STRONG><a name="[35]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000001))
+<BR><BR>[Calls]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_init
+</UL>
+
+<P><STRONG><a name="[e1]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+<P><STRONG><a name="[37]"></a>__rt_lib_init_lc_common</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000F))
+<BR><BR>[Calls]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_locale
+</UL>
+
+<P><STRONG><a name="[e2]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+
+<P><STRONG><a name="[e3]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+
+<P><STRONG><a name="[e4]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+
+<P><STRONG><a name="[e5]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[39]"></a>__rt_lib_init_lc_ctype_2</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000012))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_lib_init_lc_ctype_2 &rArr; _get_lc_ctype
+</UL>
+<BR>[Calls]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_get_lc_ctype
+</UL>
+
+<P><STRONG><a name="[e6]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+<P><STRONG><a name="[e7]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+
+<P><STRONG><a name="[e8]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+<P><STRONG><a name="[e9]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+<P><STRONG><a name="[ea]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+
+<P><STRONG><a name="[eb]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+
+<P><STRONG><a name="[ec]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+<P><STRONG><a name="[ed]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+
+<P><STRONG><a name="[ee]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[ef]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[f0]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+<P><STRONG><a name="[f1]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[f2]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+
+<P><STRONG><a name="[f3]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+
+<P><STRONG><a name="[f4]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+
+<P><STRONG><a name="[42]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
+</UL>
+
+<P><STRONG><a name="[f5]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+
+<P><STRONG><a name="[f6]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
+
+<P><STRONG><a name="[f7]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+<P><STRONG><a name="[f8]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
+
+<P><STRONG><a name="[f9]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
+
+<P><STRONG><a name="[fa]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+
+<P><STRONG><a name="[fb]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+
+<P><STRONG><a name="[2a]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+</UL>
+
+<P><STRONG><a name="[fc]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+<P><STRONG><a name="[3a]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_sh &rArr; __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[3c]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Calls]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
+</UL>
+
+<P><STRONG><a name="[fd]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+
+<P><STRONG><a name="[3e]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; main &rArr; HardwareInit &rArr; InitSSIHW &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+
+<P><STRONG><a name="[fe]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+<P><STRONG><a name="[59]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+
+<P><STRONG><a name="[41]"></a>__rt_exit_ls</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
+</UL>
+
+<P><STRONG><a name="[ff]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[43]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+
+<P><STRONG><a name="[45]"></a>SysCtlDelay</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sysctl.o(.emb_text))
+<BR><BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+</UL>
+
+<P><STRONG><a name="[100]"></a>CPUcpsid</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[101]"></a>CPUprimask</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[9f]"></a>CPUcpsie</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cpu.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+</UL>
+
+<P><STRONG><a name="[102]"></a>CPUwfi</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[103]"></a>CPUbasepriSet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[104]"></a>CPUbasepriGet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[58]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[105]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[106]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[46]"></a>toupper</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, toupper.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = toupper &rArr; __rt_ctype_table
+</UL>
+<BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMapKeys
+</UL>
+
+<P><STRONG><a name="[48]"></a>__2printf</STRONG> (Thumb, 20 bytes, Stack size 24 bytes, noretval__2printf.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144 + Unknown Stack Size
+<LI>Call Chain = __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_file
+</UL>
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringAtCityRequesting
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringBotIdle
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSSIHW
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetTargetBasedOnMyTeam
+<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunEventPrinter
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitMotorService
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMapKeys
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportAllStates
+</UL>
+
+<P><STRONG><a name="[4b]"></a>_printf_pre_padding</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, _printf_pad.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _printf_pre_padding
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_str
+</UL>
+
+<P><STRONG><a name="[4c]"></a>_printf_post_padding</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, _printf_pad.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _printf_post_padding
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_str
+</UL>
+
+<P><STRONG><a name="[4a]"></a>_printf_str</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, _printf_str.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = _printf_str &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+</UL>
+<BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_cs_common
+</UL>
+
+<P><STRONG><a name="[2e]"></a>_printf_int_dec</STRONG> (Thumb, 104 bytes, Stack size 24 bytes, _printf_dec.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = _printf_int_dec &rArr; _printf_int_common &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_d
+</UL>
+
+<P><STRONG><a name="[30]"></a>_printf_int_hex</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, _printf_hex_int.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = _printf_int_hex &rArr; _printf_int_common &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_x
+</UL>
+
+<P><STRONG><a name="[107]"></a>_printf_longlong_hex</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, _printf_hex_int.o(.text), UNUSED)
+
+<P><STRONG><a name="[4e]"></a>__printf</STRONG> (Thumb, 308 bytes, Stack size 40 bytes, __printf_flags_wp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + Unknown Stack Size
+<LI>Call Chain = __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_percent
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_is_digit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
+</UL>
+
+<P><STRONG><a name="[51]"></a>getc</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, getc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = getc &rArr; fgetc &rArr; TERMIO_GetChar &rArr; UARTgetc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fgetc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4Keystroke
+</UL>
+
+<P><STRONG><a name="[53]"></a>puts</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, puts.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = puts &rArr; fputc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[108]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[109]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[10a]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[47]"></a>__rt_ctype_table</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, rt_ctype_table.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __rt_ctype_table
+</UL>
+<BR>[Calls]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_locale
+</UL>
+<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;toupper
+</UL>
+
+<P><STRONG><a name="[4d]"></a>_printf_int_common</STRONG> (Thumb, 178 bytes, Stack size 32 bytes, _printf_intcommon.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = _printf_int_common &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+</UL>
+<BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_hex
+<LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_dec
+</UL>
+
+<P><STRONG><a name="[54]"></a>_printf_cs_common</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, _printf_char.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _printf_cs_common &rArr; _printf_str &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_str
+</UL>
+<BR>[Called By]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_string
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char
+</UL>
+
+<P><STRONG><a name="[32]"></a>_printf_char</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, _printf_char.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _printf_char &rArr; _printf_cs_common &rArr; _printf_str &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_cs_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_c
+</UL>
+
+<P><STRONG><a name="[34]"></a>_printf_string</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, _printf_char.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _printf_string &rArr; _printf_cs_common &rArr; _printf_str &rArr; _printf_post_padding
+</UL>
+<BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_cs_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_s
+</UL>
+
+<P><STRONG><a name="[49]"></a>_printf_char_file</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, _printf_char_file.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120 + Unknown Stack Size
+<LI>Call Chain = _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ferror
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+
+<P><STRONG><a name="[38]"></a>__rt_locale</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_locale_intlibspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_lc_common
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+</UL>
+
+<P><STRONG><a name="[55]"></a>_printf_char_common</STRONG> (Thumb, 32 bytes, Stack size 64 bytes, _printf_char_common.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104 + Unknown Stack Size
+<LI>Call Chain = _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_file
+</UL>
+
+<P><STRONG><a name="[10b]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[57]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[10c]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[3b]"></a>__user_setup_stackheap</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
+</UL>
+
+<P><STRONG><a name="[40]"></a>exit</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, exit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = exit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[d1]"></a>strcmp</STRONG> (Thumb, 128 bytes, Stack size 0 bytes, strcmpv7m.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_get_lc_ctype
+</UL>
+
+<P><STRONG><a name="[98]"></a>ADC_MultiInit</STRONG> (Thumb, 170 bytes, Stack size 8 bytes, admulti.o(i.ADC_MultiInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ADC_MultiInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitLineSensorsHW
+</UL>
+
+<P><STRONG><a name="[cd]"></a>ADC_MultiRead</STRONG> (Thumb, 46 bytes, Stack size 12 bytes, admulti.o(i.ADC_MultiRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = ADC_MultiRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateAllLineReadings
+</UL>
+
+<P><STRONG><a name="[7a]"></a>CPUgetPRIMASK_cpsid</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, es_port.o(i.CPUgetPRIMASK_cpsid))
+<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_EnQueueFIFO
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_DeQueue
+</UL>
+
+<P><STRONG><a name="[7b]"></a>CPUsetPRIMASK</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, es_port.o(i.CPUsetPRIMASK))
+<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_EnQueueFIFO
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_DeQueue
+</UL>
+
+<P><STRONG><a name="[5a]"></a>Check4CenterOnBlackLine</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, linesensorshw.o(i.Check4CenterOnBlackLine))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Check4CenterOnBlackLine &rArr; PostMasterSM &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPeriodicEventCheckerService
+</UL>
+
+<P><STRONG><a name="[5b]"></a>Check4GameOver</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, gametimersm.o(i.Check4GameOver))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Check4GameOver &rArr; PostMasterSM &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetTimeLeft
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPeriodicEventCheckerService
+</UL>
+
+<P><STRONG><a name="[15]"></a>Check4Keystroke</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, eventcheckers.o(i.Check4Keystroke))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Check4Keystroke &rArr; PostMapKeys &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kbhit
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMapKeys
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_checkevents.o(.constdata)
+</UL>
+<P><STRONG><a name="[5e]"></a>Check4LineAligned</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, linesensorshw.o(i.Check4LineAligned))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = Check4LineAligned &rArr; PostMasterSM &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPeriodicEventCheckerService
+</UL>
+
+<P><STRONG><a name="[5f]"></a>Check4SwitchChange</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, periodiceventcheckerservice.o(i.Check4SwitchChange))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = Check4SwitchChange &rArr; PostEventPrinter &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSwitch
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostEventPrinter
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPeriodicEventCheckerService
+</UL>
+
+<P><STRONG><a name="[c]"></a>CityIntHandler</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, citysensorhw.o(i.CityIntHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = CityIntHandler &rArr; PostMasterSM &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>CityTOIntHandler</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, citysensorhw.o(i.CityTOIntHandler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[b6]"></a>ClearFindCityCounter</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, citysensorhw.o(i.ClearFindCityCounter))
+<BR><BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+
+<P><STRONG><a name="[b5]"></a>ClearLineSensorReadings</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, linesensorshw.o(i.ClearLineSensorReadings))
+<BR><BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+
+<P><STRONG><a name="[10]"></a>ControllerInterruptResponse</STRONG> (Thumb, 146 bytes, Stack size 40 bytes, project_motorservice.o(i.ControllerInterruptResponse))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ControllerInterruptResponse &rArr; __aeabi_dmul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRPM1
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetRPM0
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[6e]"></a>DisableCitySensorInts</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, citysensorhw.o(i.DisableCitySensorInts))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringBotIdle
+</UL>
+
+<P><STRONG><a name="[ae]"></a>DisableIRInts</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, irsensorhw.o(i.DisableIRInts))
+<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+</UL>
+
+<P><STRONG><a name="[9d]"></a>DisableLineFollowInts</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, project_motorservice.o(i.DisableLineFollowInts))
+<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunFindingCityNavSM
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitMotorService
+</UL>
+
+<P><STRONG><a name="[85]"></a>ES_CheckUserEvents</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, es_checkevents.o(i.ES_CheckUserEvents))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ES_CheckUserEvents
+</UL>
+<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Run
+</UL>
+
+<P><STRONG><a name="[79]"></a>ES_DeQueue</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, es_queue.o(i.ES_DeQueue))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ES_DeQueue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUsetPRIMASK
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUgetPRIMASK_cpsid
+</UL>
+<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Run
+</UL>
+
+<P><STRONG><a name="[7c]"></a>ES_EnQueueFIFO</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, es_queue.o(i.ES_EnQueueFIFO))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUsetPRIMASK
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUgetPRIMASK_cpsid
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_PostToService
+</UL>
+
+<P><STRONG><a name="[83]"></a>ES_GetMSBitSet</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, es_lookuptables.o(i.ES_GetMSBitSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ES_GetMSBitSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Run
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_Tick_Resp
+</UL>
+
+<P><STRONG><a name="[7f]"></a>ES_InitQueue</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, es_queue.o(i.ES_InitQueue))
+<BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Initialize
+</UL>
+
+<P><STRONG><a name="[7d]"></a>ES_Initialize</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, es_framework.o(i.ES_Initialize))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ES_Initialize &rArr; ES_Timer_Init &rArr; _HW_Timer_Init &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_Init
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_InitQueue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[24]"></a>ES_PostList01</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, es_postlist.o(i.ES_PostList01))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ES_PostList01 &rArr; PostToList
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostToList
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_timers.o(.constdata)
+</UL>
+<P><STRONG><a name="[25]"></a>ES_PostList02</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, es_postlist.o(i.ES_PostList02))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ES_PostList02 &rArr; PostToList
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostToList
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_timers.o(.constdata)
+</UL>
+<P><STRONG><a name="[81]"></a>ES_PostToService</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, es_framework.o(i.ES_PostToService))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_EnQueueFIFO
+</UL>
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostEventPrinter
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMapKeys
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostPeriodicEventCheckerService
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitPeriodicEventCheckerService
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMotorService
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitMotorService
+</UL>
+
+<P><STRONG><a name="[82]"></a>ES_Run</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, es_framework.o(i.ES_Run))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = ES_Run &rArr; _HW_Process_Pending_Ints &rArr; ES_Timer_Tick_Resp &rArr; ES_GetMSBitSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_HW_Process_Pending_Ints
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_GetMSBitSet
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_DeQueue
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_CheckUserEvents
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[86]"></a>ES_Timer_GetTime</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, es_timers.o(i.ES_Timer_GetTime))
+<BR><BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_HW_GetTickCount
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetTimeLeft
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunGameTimerSM
+</UL>
+
+<P><STRONG><a name="[7e]"></a>ES_Timer_Init</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, es_timers.o(i.ES_Timer_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ES_Timer_Init &rArr; _HW_Timer_Init &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_HW_Timer_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Initialize
+</UL>
+
+<P><STRONG><a name="[77]"></a>ES_Timer_InitTimer</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, es_timers.o(i.ES_Timer_InitTimer))
+<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunFindingCityNavSM
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPACCommSM
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunGameTimerSM
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPeriodicEventCheckerService
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitPeriodicEventCheckerService
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMotorService
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitMotorService
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringRotatingOnLine
+</UL>
+
+<P><STRONG><a name="[78]"></a>ES_Timer_StopTimer</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, es_timers.o(i.ES_Timer_StopTimer))
+<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunFindingCityNavSM
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringRotatingOnLine
+</UL>
+
+<P><STRONG><a name="[89]"></a>ES_Timer_Tick_Resp</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, es_timers.o(i.ES_Timer_Tick_Resp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ES_Timer_Tick_Resp &rArr; ES_GetMSBitSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_GetMSBitSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_HW_Process_Pending_Ints
+</UL>
+
+<P><STRONG><a name="[73]"></a>EnableCitySensorInts</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, citysensorhw.o(i.EnableCitySensorInts))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringBotIdle
+</UL>
+
+<P><STRONG><a name="[ad]"></a>EnableIRInts</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, irsensorhw.o(i.EnableIRInts))
+<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+</UL>
+
+<P><STRONG><a name="[b9]"></a>EnableLineFollowInts</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, project_motorservice.o(i.EnableLineFollowInts))
+<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunFindingCityNavSM
+</UL>
+
+<P><STRONG><a name="[8b]"></a>GPIODirModeSet</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, gpio.o(i.GPIODirModeSet))
+<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+</UL>
+
+<P><STRONG><a name="[8c]"></a>GPIOPadConfigSet</STRONG> (Thumb, 312 bytes, Stack size 24 bytes, gpio.o(i.GPIOPadConfigSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GPIOPadConfigSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+</UL>
+
+<P><STRONG><a name="[c8]"></a>GPIOPinConfigure</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, gpio.o(i.GPIOPinConfigure))
+<BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERMIO_Init
+</UL>
+
+<P><STRONG><a name="[8a]"></a>GPIOPinTypeGPIOInput</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeGPIOInput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = GPIOPinTypeGPIOInput &rArr; GPIOPadConfigSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortFunctionInit
+</UL>
+
+<P><STRONG><a name="[8d]"></a>GPIOPinTypeUART</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeUART))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = GPIOPinTypeUART &rArr; GPIOPadConfigSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERMIO_Init
+</UL>
+
+<P><STRONG><a name="[aa]"></a>GetBallCount</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, atcityshootsm.o(i.GetBallCount))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+</UL>
+
+<P><STRONG><a name="[69]"></a>GetCityPeriodUS</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, citysensorhw.o(i.GetCityPeriodUS))
+<BR><BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringAtCityRequesting
+</UL>
+
+<P><STRONG><a name="[ab]"></a>GetCityShootStatus</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, atcityshootsm.o(i.GetCityShootStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+</UL>
+
+<P><STRONG><a name="[75]"></a>GetLineReading</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, linesensorshw.o(i.GetLineReading))
+<BR><BR>[Called By]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OnLineMotorSpeedsInterrupt
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringRotatingOnLine
+</UL>
+
+<P><STRONG><a name="[a9]"></a>GetPACMsg</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, paccommsm.o(i.GetPACMsg))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+
+<P><STRONG><a name="[61]"></a>GetRPM0</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, project_motorservice.o(i.GetRPM0))
+<BR><BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ControllerInterruptResponse
+</UL>
+
+<P><STRONG><a name="[62]"></a>GetRPM1</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, project_motorservice.o(i.GetRPM1))
+<BR><BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ControllerInterruptResponse
+</UL>
+
+<P><STRONG><a name="[6b]"></a>GetTeamColor</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, botsm_1.o(i.GetTeamColor))
+<BR><BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringAtCityRequesting
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+</UL>
+
+<P><STRONG><a name="[5c]"></a>GetTimeLeft</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, gametimersm.o(i.GetTimeLeft))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GetTimeLeft
+</UL>
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_GetTime
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4GameOver
+</UL>
+
+<P><STRONG><a name="[8e]"></a>HardwareInit</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, mastersm.o(i.HardwareInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = HardwareInit &rArr; InitSSIHW &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitTeamColorSwitchHW
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSwitchesHW
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSSIHW
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitCAMMotorHW
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitLineSensorsHW
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitLEDsHW
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitIRSensorHW
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortFunctionInit
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitCitySensorHW
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[e]"></a>IRIntHandler</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, irsensorhw.o(i.IRIntHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = IRIntHandler &rArr; PostMasterSM &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>IRTOIntHandler</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, irsensorhw.o(i.IRTOIntHandler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[97]"></a>InitCAMMotorHW</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, cammotorhw.o(i.InitCAMMotorHW))
+<BR><BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardwareInit
+</UL>
+
+<P><STRONG><a name="[91]"></a>InitCitySensorHW</STRONG> (Thumb, 184 bytes, Stack size 0 bytes, citysensorhw.o(i.InitCitySensorHW))
+<BR><BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardwareInit
+</UL>
+
+<P><STRONG><a name="[9c]"></a>InitControllerInterrupt</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, project_motorservice.o(i.InitControllerInterrupt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = InitControllerInterrupt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitMotorService
+</UL>
+
+<P><STRONG><a name="[9b]"></a>InitEncoderInterrupt</STRONG> (Thumb, 292 bytes, Stack size 0 bytes, project_motorservice.o(i.InitEncoderInterrupt))
+<BR><BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitMotorService
+</UL>
+
+<P><STRONG><a name="[18]"></a>InitEventPrinter</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, eventprinter.o(i.InitEventPrinter))
+<BR>[Address Reference Count : 1]<UL><LI> es_framework.o(.constdata)
+</UL>
+<P><STRONG><a name="[92]"></a>InitIRSensorHW</STRONG> (Thumb, 186 bytes, Stack size 0 bytes, irsensorhw.o(i.InitIRSensorHW))
+<BR><BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardwareInit
+</UL>
+
+<P><STRONG><a name="[94]"></a>InitLEDsHW</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, ledshw.o(i.InitLEDsHW))
+<BR><BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardwareInit
+</UL>
+
+<P><STRONG><a name="[90]"></a>InitLineSensorsHW</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, linesensorshw.o(i.InitLineSensorsHW))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = InitLineSensorsHW &rArr; ADC_MultiInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_MultiInit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardwareInit
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitMotorService
+</UL>
+
+<P><STRONG><a name="[16]"></a>InitMapKeys</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mapkeys.o(i.InitMapKeys))
+<BR>[Address Reference Count : 1]<UL><LI> es_framework.o(.constdata)
+</UL>
+<P><STRONG><a name="[1c]"></a>InitMasterSM</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, mastersm.o(i.InitMasterSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256 + Unknown Stack Size
+<LI>Call Chain = InitMasterSM &rArr; StartMasterSM &rArr; RunMasterSM &rArr; StartBotSM &rArr; RunBotSM &rArr;  RunBotSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartMasterSM
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_framework.o(.constdata)
+</UL>
+<P><STRONG><a name="[1e]"></a>InitMotorService</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, project_motorservice.o(i.InitMotorService))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = InitMotorService &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetMotorDutyCycles
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_InitTimer
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitLineSensorsHW
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_PostToService
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMInit
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitEncoderInterrupt
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitControllerInterrupt
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisableLineFollowInts
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_framework.o(.constdata)
+</UL>
+<P><STRONG><a name="[1a]"></a>InitPeriodicEventCheckerService</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, periodiceventcheckerservice.o(i.InitPeriodicEventCheckerService))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = InitPeriodicEventCheckerService &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSwitch
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_InitTimer
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_PostToService
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_framework.o(.constdata)
+</UL>
+<P><STRONG><a name="[95]"></a>InitSSIHW</STRONG> (Thumb, 210 bytes, Stack size 0 bytes, ssihw.o(i.InitSSIHW))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144 + Unknown Stack Size
+<LI>Call Chain = InitSSIHW &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardwareInit
+</UL>
+
+<P><STRONG><a name="[96]"></a>InitSwitchesHW</STRONG> (Thumb, 116 bytes, Stack size 0 bytes, switcheshw.o(i.InitSwitchesHW))
+<BR><BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardwareInit
+</UL>
+
+<P><STRONG><a name="[93]"></a>InitTeamColorSwitchHW</STRONG> (Thumb, 64 bytes, Stack size 0 bytes, teamcolorswitchhw.o(i.InitTeamColorSwitchHW))
+<BR><BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardwareInit
+</UL>
+
+<P><STRONG><a name="[8]"></a>InputCaptureResponse0</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, project_motorservice.o(i.InputCaptureResponse0))
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>InputCaptureResponse1</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, project_motorservice.o(i.InputCaptureResponse1))
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[9e]"></a>IntMasterEnable</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, interrupt.o(i.IntMasterEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUcpsie
+</UL>
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_HW_Timer_Init
+</UL>
+
+<P><STRONG><a name="[11]"></a>OnLineMotorSpeedsInterrupt</STRONG> (Thumb, 140 bytes, Stack size 8 bytes, project_motorservice.o(i.OnLineMotorSpeedsInterrupt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = OnLineMotorSpeedsInterrupt &rArr; SetMotorDutyCycles &rArr; setDuty
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetMotorDutyCycles
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetLineReading
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[9a]"></a>PWMInit</STRONG> (Thumb, 146 bytes, Stack size 0 bytes, project_pwmlab.o(i.PWMInit))
+<BR><BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitMotorService
+</UL>
+
+<P><STRONG><a name="[8f]"></a>PortFunctionInit</STRONG> (Thumb, 132 bytes, Stack size 8 bytes, enablepa25_pb23_pd7_pf0.o(i.PortFunctionInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = PortFunctionInit &rArr; GPIOPinTypeGPIOInput &rArr; GPIOPadConfigSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardwareInit
+</UL>
+
+<P><STRONG><a name="[22]"></a>PostEventPrinter</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, eventprinter.o(i.PostEventPrinter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = PostEventPrinter &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_PostToService
+</UL>
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringAtCityRequesting
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4SwitchChange
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMapKeys
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_postlist.o(.constdata)
+</UL>
+<P><STRONG><a name="[21]"></a>PostMapKeys</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, mapkeys.o(i.PostMapKeys))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PostMapKeys &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_PostToService
+</UL>
+<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4Keystroke
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_postlist.o(.constdata)
+</UL>
+<P><STRONG><a name="[20]"></a>PostMasterSM</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, mastersm.o(i.PostMasterSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PostMasterSM &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_PostToService
+</UL>
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringAtCityRequesting
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4GameOver
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringBotIdle
+<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIHWEOTIntHandler
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPACCommSM
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4LineAligned
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4CenterOnBlackLine
+<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRIntHandler
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CityIntHandler
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4SwitchChange
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMapKeys
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> es_postlist.o(.constdata)
+<LI> es_timers.o(.constdata)
+</UL>
+<P><STRONG><a name="[26]"></a>PostMotorService</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, project_motorservice.o(i.PostMotorService))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PostMotorService &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_PostToService
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_timers.o(.constdata)
+</UL>
+<P><STRONG><a name="[23]"></a>PostPeriodicEventCheckerService</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, periodiceventcheckerservice.o(i.PostPeriodicEventCheckerService))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PostPeriodicEventCheckerService &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_PostToService
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_postlist.o(.constdata)
+</UL>
+<P><STRONG><a name="[bf]"></a>PrintRPM</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, project_motorservice.o(i.PrintRPM))
+<BR><BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMotorService
+</UL>
+
+<P><STRONG><a name="[a6]"></a>QueryAtCityCommSM</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, atcitycommsm.o(i.QueryAtCityCommSM))
+<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportAllStates
+</UL>
+
+<P><STRONG><a name="[a7]"></a>QueryAtCityShootSM</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, atcityshootsm.o(i.QueryAtCityShootSM))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportAllStates
+</UL>
+
+<P><STRONG><a name="[a4]"></a>QueryBotSM</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, botsm_1.o(i.QueryBotSM))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportAllStates
+</UL>
+
+<P><STRONG><a name="[a5]"></a>QueryFindingCityNavSM</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, findingcitynavsm.o(i.QueryFindingCityNavSM))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportAllStates
+</UL>
+
+<P><STRONG><a name="[a2]"></a>QueryGameTimerSM</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gametimersm.o(i.QueryGameTimerSM))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportAllStates
+</UL>
+
+<P><STRONG><a name="[a3]"></a>QueryPACCommSM</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, paccommsm.o(i.QueryPACCommSM))
+<BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportAllStates
+</UL>
+
+<P><STRONG><a name="[c1]"></a>ReadSSI</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, ssihw.o(i.ReadSSI))
+<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPACCommSM
+</UL>
+
+<P><STRONG><a name="[60]"></a>ReadSwitch</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, switcheshw.o(i.ReadSwitch))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ReadSwitch
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitPeriodicEventCheckerService
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4SwitchChange
+</UL>
+
+<P><STRONG><a name="[6f]"></a>ReadTeamColor</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, teamcolorswitchhw.o(i.ReadTeamColor))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringBotIdle
+</UL>
+
+<P><STRONG><a name="[a1]"></a>ReportAllStates</STRONG> (Thumb, 242 bytes, Stack size 8 bytes, mapkeys.o(i.ReportAllStates))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = ReportAllStates &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QueryAtCityShootSM
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QueryAtCityCommSM
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QueryPACCommSM
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QueryGameTimerSM
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QueryBotSM
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QueryFindingCityNavSM
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMapKeys
+</UL>
+
+<P><STRONG><a name="[b2]"></a>ResetBallCounter</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, atcityshootsm.o(i.ResetBallCounter))
+<BR><BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+
+<P><STRONG><a name="[a8]"></a>RunAtCityCommSM</STRONG> (Thumb, 396 bytes, Stack size 32 bytes, atcitycommsm.o(i.RunAtCityCommSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
+ + In Cycle
+<LI>Call Chain = RunAtCityCommSM &rArr;  RunAtCityCommSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QueryAtCityShootSM
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetCityShootStatus
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetBallCount
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringAtCityRequesting
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetPACMsg
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_InitTimer
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetTeamColor
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostEventPrinter
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartAtCityCommSM
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+
+<P><STRONG><a name="[ac]"></a>RunAtCityShootSM</STRONG> (Thumb, 346 bytes, Stack size 40 bytes, atcityshootsm.o(i.RunAtCityShootSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+ + In Cycle
+<LI>Call Chain = RunAtCityShootSM &rArr;  RunAtCityShootSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetCAMMotorOn
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetCAMMotorOff
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QueryAtCityCommSM
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_GetTime
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetMotorDutyCycles
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_InitTimer
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableIRInts
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisableIRInts
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostEventPrinter
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartAtCityShootSM
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+
+<P><STRONG><a name="[b1]"></a>RunBotSM</STRONG> (Thumb, 386 bytes, Stack size 32 bytes, botsm_1.o(i.RunBotSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 232 + Unknown Stack Size
+ + In Cycle
+<LI>Call Chain = RunBotSM &rArr;  RunBotSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartFindingCityNavSM
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartAtCityShootSM
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartAtCityCommSM
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetMotorDutyCycles
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunFindingCityNavSM
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ResetBallCounter
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetPACMsg
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_StopTimer
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_InitTimer
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringBotIdle
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearLineSensorReadings
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostEventPrinter
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearFindCityCounter
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartBotSM
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMasterSM
+</UL>
+
+<P><STRONG><a name="[19]"></a>RunEventPrinter</STRONG> (Thumb, 156 bytes, Stack size 8 bytes, eventprinter.o(i.RunEventPrinter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = RunEventPrinter &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_framework.o(.constdata)
+</UL>
+<P><STRONG><a name="[b3]"></a>RunFindingCityNavSM</STRONG> (Thumb, 338 bytes, Stack size 40 bytes, findingcitynavsm.o(i.RunFindingCityNavSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76 + In Cycle
+<LI>Call Chain = RunFindingCityNavSM &rArr;  RunFindingCityNavSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetMotorDutyCycles
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunFindingCityNavSM
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_StopTimer
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_InitTimer
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableLineFollowInts
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisableLineFollowInts
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringRotatingOnLine
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartFindingCityNavSM
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunFindingCityNavSM
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+
+<P><STRONG><a name="[ba]"></a>RunGameTimerSM</STRONG> (Thumb, 158 bytes, Stack size 32 bytes, gametimersm.o(i.RunGameTimerSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32 + In Cycle
+<LI>Call Chain = RunGameTimerSM &rArr;  RunGameTimerSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_GetTime
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_InitTimer
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunGameTimerSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartGameTimerSM
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunGameTimerSM
+<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMasterSM
+</UL>
+
+<P><STRONG><a name="[17]"></a>RunMapKeys</STRONG> (Thumb, 190 bytes, Stack size 24 bytes, mapkeys.o(i.RunMapKeys))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176 + Unknown Stack Size
+<LI>Call Chain = RunMapKeys &rArr; ReportAllStates &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostEventPrinter
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReportAllStates
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;toupper
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_framework.o(.constdata)
+</UL>
+<P><STRONG><a name="[1d]"></a>RunMasterSM</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, mastersm.o(i.RunMasterSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 248 + Unknown Stack Size
+<LI>Call Chain = RunMasterSM &rArr; StartBotSM &rArr; RunBotSM &rArr;  RunBotSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPACCommSM
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartGameTimerSM
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartBotSM
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPACCommSM
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunGameTimerSM
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartMasterSM
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_framework.o(.constdata)
+</UL>
+<P><STRONG><a name="[1f]"></a>RunMotorService</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, project_motorservice.o(i.RunMotorService))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = RunMotorService
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_InitTimer
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PrintRPM
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_framework.o(.constdata)
+</UL>
+<P><STRONG><a name="[bb]"></a>RunPACCommSM</STRONG> (Thumb, 192 bytes, Stack size 32 bytes, paccommsm.o(i.RunPACCommSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56 + In Cycle
+<LI>Call Chain = RunPACCommSM &rArr;  RunPACCommSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_InitTimer
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TransmitSSI
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSSI
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPACCommSM
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPACCommSM
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPACCommSM
+<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMasterSM
+</UL>
+
+<P><STRONG><a name="[1b]"></a>RunPeriodicEventCheckerService</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, periodiceventcheckerservice.o(i.RunPeriodicEventCheckerService))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = RunPeriodicEventCheckerService &rArr; Check4SwitchChange &rArr; PostEventPrinter &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4GameOver
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_InitTimer
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateAllLineReadings
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4LineAligned
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4CenterOnBlackLine
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4SwitchChange
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> es_framework.o(.constdata)
+</UL>
+<P><STRONG><a name="[7]"></a>SSIHWEOTIntHandler</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, ssihw.o(i.SSIHWEOTIntHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SSIHWEOTIntHandler &rArr; PostMasterSM &rArr; ES_PostToService &rArr; ES_EnQueueFIFO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[b0]"></a>SetCAMMotorOff</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, cammotorhw.o(i.SetCAMMotorOff))
+<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+</UL>
+
+<P><STRONG><a name="[af]"></a>SetCAMMotorOn</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, cammotorhw.o(i.SetCAMMotorOn))
+<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+</UL>
+
+<P><STRONG><a name="[6d]"></a>SetLEDOff</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, ledshw.o(i.SetLEDOff))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringBotIdle
+</UL>
+
+<P><STRONG><a name="[70]"></a>SetLEDOn</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, ledshw.o(i.SetLEDOn))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringBotIdle
+</UL>
+
+<P><STRONG><a name="[76]"></a>SetMotorDutyCycles</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, project_motorservice.o(i.SetMotorDutyCycles))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SetMotorDutyCycles &rArr; setDuty
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setDuty
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunFindingCityNavSM
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OnLineMotorSpeedsInterrupt
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitMotorService
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringRotatingOnLine
+</UL>
+
+<P><STRONG><a name="[71]"></a>SetShouldShootList</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, atcityshootsm.o(i.SetShouldShootList))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringBotIdle
+</UL>
+
+<P><STRONG><a name="[72]"></a>SetTargetBasedOnMyTeam</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, irsensorhw.o(i.SetTargetBasedOnMyTeam))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144 + Unknown Stack Size
+<LI>Call Chain = SetTargetBasedOnMyTeam &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringBotIdle
+</UL>
+
+<P><STRONG><a name="[b7]"></a>StartAtCityCommSM</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, atcitycommsm.o(i.StartAtCityCommSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
+<LI>Call Chain = StartAtCityCommSM &rArr; RunAtCityCommSM &rArr;  RunAtCityCommSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+
+<P><STRONG><a name="[b8]"></a>StartAtCityShootSM</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, atcityshootsm.o(i.StartAtCityShootSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = StartAtCityShootSM &rArr; RunAtCityShootSM &rArr;  RunAtCityShootSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityShootSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+
+<P><STRONG><a name="[bd]"></a>StartBotSM</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, botsm_1.o(i.StartBotSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 232 + Unknown Stack Size
+<LI>Call Chain = StartBotSM &rArr; RunBotSM &rArr;  RunBotSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMasterSM
+</UL>
+
+<P><STRONG><a name="[b4]"></a>StartFindingCityNavSM</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, findingcitynavsm.o(i.StartFindingCityNavSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = StartFindingCityNavSM &rArr; RunFindingCityNavSM &rArr;  RunFindingCityNavSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunFindingCityNavSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+
+<P><STRONG><a name="[be]"></a>StartGameTimerSM</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gametimersm.o(i.StartGameTimerSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = StartGameTimerSM &rArr; RunGameTimerSM &rArr;  RunGameTimerSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunGameTimerSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMasterSM
+</UL>
+
+<P><STRONG><a name="[99]"></a>StartMasterSM</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, mastersm.o(i.StartMasterSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 248 + Unknown Stack Size
+<LI>Call Chain = StartMasterSM &rArr; RunMasterSM &rArr; StartBotSM &rArr; RunBotSM &rArr;  RunBotSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMasterSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitMasterSM
+</UL>
+
+<P><STRONG><a name="[bc]"></a>StartPACCommSM</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, paccommsm.o(i.StartPACCommSM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = StartPACCommSM &rArr; RunPACCommSM &rArr;  RunPACCommSM (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPACCommSM
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunMasterSM
+</UL>
+
+<P><STRONG><a name="[c4]"></a>SysCtlClockSet</STRONG> (Thumb, 270 bytes, Stack size 8 bytes, sysctl.o(i.SysCtlClockSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysCtlClockSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a0]"></a>SysCtlPeripheralEnable</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlPeripheralEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortFunctionInit
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERMIO_Init
+</UL>
+
+<P><STRONG><a name="[d0]"></a>SysTickEnable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, systick.o(i.SysTickEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_HW_Timer_Init
+</UL>
+
+<P><STRONG><a name="[cf]"></a>SysTickIntEnable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, systick.o(i.SysTickIntEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_HW_Timer_Init
+</UL>
+
+<P><STRONG><a name="[6]"></a>SysTickIntHandler</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, es_port.o(i.SysTickIntHandler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[ce]"></a>SysTickPeriodSet</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, systick.o(i.SysTickPeriodSet))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_HW_Timer_Init
+</UL>
+
+<P><STRONG><a name="[c5]"></a>TERMIO_GetChar</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, termio.o(i.TERMIO_GetChar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TERMIO_GetChar &rArr; UARTgetc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgetc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fgetc
+</UL>
+
+<P><STRONG><a name="[c7]"></a>TERMIO_Init</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, termio.o(i.TERMIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = TERMIO_Init &rArr; GPIOPinTypeUART &rArr; GPIOPadConfigSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTStdioConfig
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTClockSourceSet
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinConfigure
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[cb]"></a>TERMIO_PutChar</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, termio.o(i.TERMIO_PutChar))
+<BR><BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+
+<P><STRONG><a name="[9]"></a>TimeoutResponse0</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, project_motorservice.o(i.TimeoutResponse0))
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>TimeoutResponse1</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, project_motorservice.o(i.TimeoutResponse1))
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[c0]"></a>TransmitSSI</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, ssihw.o(i.TransmitSSI))
+<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPACCommSM
+</UL>
+
+<P><STRONG><a name="[cc]"></a>UARTCharPut</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, uart.o(i.UARTCharPut))
+<BR><BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERMIO_PutChar
+</UL>
+
+<P><STRONG><a name="[c9]"></a>UARTClockSourceSet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, uart.o(i.UARTClockSourceSet))
+<BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERMIO_Init
+</UL>
+
+<P><STRONG><a name="[ca]"></a>UARTStdioConfig</STRONG> (Thumb, 82 bytes, Stack size 32 bytes, uartstdio.o(i.UARTStdioConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = UARTStdioConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERMIO_Init
+</UL>
+
+<P><STRONG><a name="[c6]"></a>UARTgetc</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, uartstdio.o(i.UARTgetc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UARTgetc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERMIO_GetChar
+</UL>
+
+<P><STRONG><a name="[c2]"></a>UpdateAllLineReadings</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, linesensorshw.o(i.UpdateAllLineReadings))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = UpdateAllLineReadings &rArr; ADC_MultiRead
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_MultiRead
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunPeriodicEventCheckerService
+</UL>
+
+<P><STRONG><a name="[87]"></a>_HW_GetTickCount</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, es_port.o(i._HW_GetTickCount))
+<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_GetTime
+</UL>
+
+<P><STRONG><a name="[84]"></a>_HW_Process_Pending_Ints</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, es_port.o(i._HW_Process_Pending_Ints))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = _HW_Process_Pending_Ints &rArr; ES_Timer_Tick_Resp &rArr; ES_GetMSBitSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_Tick_Resp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Run
+</UL>
+
+<P><STRONG><a name="[88]"></a>_HW_Timer_Init</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, es_port.o(i._HW_Timer_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _HW_Timer_Init &rArr; IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickPeriodSet
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntEnable
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickEnable
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_Init
+</UL>
+
+<P><STRONG><a name="[4f]"></a>_is_digit</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, __printf_wp.o(i._is_digit))
+<BR><BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
+</UL>
+
+<P><STRONG><a name="[44]"></a>_sys_exit</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, retarget.o(i._sys_exit))
+<BR><BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+</UL>
+
+<P><STRONG><a name="[56]"></a>ferror</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, retarget.o(i.ferror))
+<BR><BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_file
+</UL>
+
+<P><STRONG><a name="[52]"></a>fgetc</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, retarget.o(i.fgetc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = fgetc &rArr; TERMIO_GetChar &rArr; UARTgetc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERMIO_GetChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getc
+</UL>
+
+<P><STRONG><a name="[13]"></a>fputc</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, retarget.o(i.fputc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = fputc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERMIO_PutChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> _printf_char_file.o(.text)
+</UL>
+<P><STRONG><a name="[5d]"></a>kbhit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, termio.o(i.kbhit))
+<BR><BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Check4Keystroke
+</UL>
+
+<P><STRONG><a name="[3f]"></a>main</STRONG> (Thumb, 92 bytes, Stack size 0 bytes, hsmtemplatemain.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = main &rArr; HardwareInit &rArr; InitSSIHW &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TERMIO_Init
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardwareInit
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Run
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Initialize
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[c3]"></a>setDuty</STRONG> (Thumb, 148 bytes, Stack size 12 bytes, project_pwmlab.o(i.setDuty))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = setDuty
+</UL>
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetMotorDutyCycles
+</UL>
+
+<P><STRONG><a name="[12]"></a>_get_lc_ctype</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, lc_ctype_c.o(locale$$code))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _get_lc_ctype
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_lc_ctype_2
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rt_ctype_table.o(.text)
+</UL>
+<P><STRONG><a name="[67]"></a>__aeabi_d2f</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, d2f.o(x$fpl$d2f))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_d2f
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ControllerInterruptResponse
+</UL>
+
+<P><STRONG><a name="[d2]"></a>_d2f</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, d2f.o(x$fpl$d2f), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fretinf
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+</UL>
+
+<P><STRONG><a name="[66]"></a>__aeabi_dadd</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, daddsub_clz.o(x$fpl$dadd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_dadd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ControllerInterruptResponse
+</UL>
+
+<P><STRONG><a name="[d5]"></a>_dadd</STRONG> (Thumb, 332 bytes, Stack size 16 bytes, daddsub_clz.o(x$fpl$dadd), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dretinf
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsub1
+</UL>
+
+<P><STRONG><a name="[63]"></a>__aeabi_i2d</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dflt))
+<BR><BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ControllerInterruptResponse
+</UL>
+
+<P><STRONG><a name="[10d]"></a>_dflt</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dflt), UNUSED)
+
+<P><STRONG><a name="[64]"></a>__aeabi_dmul</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, dmul.o(x$fpl$dmul))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_dmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ControllerInterruptResponse
+</UL>
+
+<P><STRONG><a name="[d8]"></a>_dmul</STRONG> (Thumb, 332 bytes, Stack size 32 bytes, dmul.o(x$fpl$dmul), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dretinf
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+</UL>
+
+<P><STRONG><a name="[d4]"></a>__fpl_dnaninf</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, dnaninf.o(x$fpl$dnaninf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dmul
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsub
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_d2f
+</UL>
+
+<P><STRONG><a name="[d7]"></a>__fpl_dretinf</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dretinf.o(x$fpl$dretinf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_f2d
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dmul
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd
+</UL>
+
+<P><STRONG><a name="[10e]"></a>__aeabi_dsub</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, daddsub_clz.o(x$fpl$dsub), UNUSED)
+
+<P><STRONG><a name="[d9]"></a>_dsub</STRONG> (Thumb, 464 bytes, Stack size 32 bytes, daddsub_clz.o(x$fpl$dsub), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd1
+</UL>
+
+<P><STRONG><a name="[65]"></a>__aeabi_f2d</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_f2d
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ControllerInterruptResponse
+</UL>
+
+<P><STRONG><a name="[db]"></a>_f2d</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fnaninf
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dretinf
+</UL>
+
+<P><STRONG><a name="[dc]"></a>__fpl_fnaninf</STRONG> (Thumb, 140 bytes, Stack size 8 bytes, fnaninf.o(x$fpl$fnaninf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_f2d
+</UL>
+
+<P><STRONG><a name="[36]"></a>_fp_init</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, fpinit.o(x$fpl$fpinit))
+<BR><BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_fp_1
+</UL>
+
+<P><STRONG><a name="[10f]"></a>__fplib_config_fpu_vfp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+
+<P><STRONG><a name="[110]"></a>__fplib_config_pureend_doubles</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+
+<P><STRONG><a name="[d3]"></a>__fpl_fretinf</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, fretinf.o(x$fpl$fretinf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_d2f
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[6c]"></a>DuringBotIdle</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, botsm_1.o(i.DuringBotIdle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = DuringBotIdle &rArr; SetTargetBasedOnMyTeam &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetShouldShootList
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTeamColor
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLEDOn
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetLEDOff
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetTargetBasedOnMyTeam
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnableCitySensorInts
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisableCitySensorInts
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunBotSM
+</UL>
+
+<P><STRONG><a name="[6a]"></a>ConvertToFreqCode</STRONG> (Thumb, 174 bytes, Stack size 0 bytes, atcitycommsm.o(i.ConvertToFreqCode))
+<BR><BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DuringAtCityRequesting
+</UL>
+
+<P><STRONG><a name="[68]"></a>DuringAtCityRequesting</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, atcitycommsm.o(i.DuringAtCityRequesting))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = DuringAtCityRequesting &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConvertToFreqCode
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetTeamColor
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostEventPrinter
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMasterSM
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetCityPeriodUS
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunAtCityCommSM
+</UL>
+
+<P><STRONG><a name="[74]"></a>DuringRotatingOnLine</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, findingcitynavsm.o(i.DuringRotatingOnLine))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = DuringRotatingOnLine &rArr; SetMotorDutyCycles &rArr; setDuty
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetMotorDutyCycles
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_StopTimer
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_Timer_InitTimer
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetLineReading
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunFindingCityNavSM
+</UL>
+
+<P><STRONG><a name="[3]"></a>NmiSR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>FaultISR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>IntDefaultHandler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[80]"></a>PostToList</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, es_postlist.o(i.PostToList))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PostToList
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_PostList02
+<LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ES_PostList01
+</UL>
+
+<P><STRONG><a name="[da]"></a>_dadd1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, daddsub_clz.o(x$fpl$dadd), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsub
+</UL>
+
+<P><STRONG><a name="[d6]"></a>_dsub1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, daddsub_clz.o(x$fpl$dsub), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd
+</UL>
+
+<P><STRONG><a name="[14]"></a>_printf_input_char</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, _printf_char_common.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> _printf_char_common.o(.text)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>
